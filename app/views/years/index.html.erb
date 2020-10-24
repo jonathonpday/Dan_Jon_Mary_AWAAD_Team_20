@@ -6,26 +6,26 @@
   <thead>
     <tr>
       <th>Country</th>
-      <th>Yr2000</th>
-      <th>Yr2001</th>
-      <th>Yr2002</th>
-      <th>Yr2003</th>
-      <th>Yr2004</th>
-      <th>Yr2005</th>
-      <th>Yr2006</th>
-      <th>Yr2007</th>
-      <th>Yr2008</th>
-      <th>Yr2009</th>
-      <th>Yr2010</th>
-      <th>Yr2011</th>
-      <th>Yr2012</th>
-      <th>Yr2013</th>
-      <th>Yr2014</th>
-      <th>Yr2015</th>
-      <th>Yr2016</th>
-      <th>Yr2017</th>
-      <th>Yr2018</th>
-      <th>Yr2019</th>
+      <th>2000</th>
+      <th>2001</th>
+      <th>2002</th>
+      <th>2003</th>
+      <th>2004</th>
+      <th>2005</th>
+      <th>2006</th>
+      <th>2007</th>
+      <th>2008</th>
+      <th>2009</th>
+      <th>2010</th>
+      <th>2011</th>
+      <th>2012</th>
+      <th>2013</th>
+      <th>2014</th>
+      <th>2015</th>
+      <th>2016</th>
+      <th>2017</th>
+      <th>2018</th>
+      <th>2019</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -34,26 +34,26 @@
     <% @years.each do |year| %>
       <tr>
         <td><%= year.country_id %></td>
-        <td><%= year.YR2000 %></td>
-        <td><%= year.YR2001 %></td>
-        <td><%= year.YR2002 %></td>
-        <td><%= year.YR2003 %></td>
-        <td><%= year.YR2004 %></td>
-        <td><%= year.YR2005 %></td>
-        <td><%= year.YR2006 %></td>
-        <td><%= year.YR2007 %></td>
-        <td><%= year.YR2008 %></td>
-        <td><%= year.YR2009 %></td>
-        <td><%= year.YR2010 %></td>
-        <td><%= year.YR2011 %></td>
-        <td><%= year.YR2012 %></td>
-        <td><%= year.YR2013 %></td>
-        <td><%= year.YR2014 %></td>
-        <td><%= year.YR2015 %></td>
-        <td><%= year.YR2016 %></td>
-        <td><%= year.YR2017 %></td>
-        <td><%= year.YR2018 %></td>
-        <td><%= year.YR2019 %></td>
+        <td><%= year.YR2000.round(2) %></td>
+        <td><%= year.YR2001.round(2) %></td>
+        <td><%= year.YR2002.round(2) %></td>
+        <td><%= year.YR2003.round(2) %></td>
+        <td><%= year.YR2004.round(2)%></td>
+        <td><%= year.YR2005.round(2) %></td>
+        <td><%= year.YR2006.round(2) %></td>
+        <td><%= year.YR2007.round(2) %></td>
+        <td><%= year.YR2008.round(2) %></td>
+        <td><%= year.YR2009.round(2) %></td>
+        <td><%= year.YR2010.round(2) %></td>
+        <td><%= year.YR2011.round(2) %></td>
+        <td><%= year.YR2012.round(2) %></td>
+        <td><%= year.YR2013.round(2) %></td>
+        <td><%= year.YR2014.round(2) %></td>
+        <td><%= year.YR2015.round(2) %></td>
+        <td><%= year.YR2016.round(2) %></td>
+        <td><%= year.YR2017.round(2) %></td>
+        <td><%= year.YR2018.round(2) %></td>
+        <td><%= year.YR2019.round(2) %></td>
         <td><%= link_to 'Show', year %></td>
         <td><%= link_to 'Edit', edit_year_path(year) %></td>
         <td><%= link_to 'Destroy', year, method: :delete, data: { confirm: 'Are you sure?' } %></td>
