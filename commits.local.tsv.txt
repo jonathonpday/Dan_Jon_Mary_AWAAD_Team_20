@@ -1,0 +1,2 @@
+9757419	Jonathon Day	Wed Oct 21 22:48:11 2020	Countires table created and CSV data uploaded
+29644b8	Jonathon Day	Wed Oct 21 09:47:32 2020	First commit!

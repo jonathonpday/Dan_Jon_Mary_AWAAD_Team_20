@@ -1,0 +1,122 @@
+<%= form_with(model: year, local: true) do |form| %>
+  <% if year.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(year.errors.count, "error") %> prohibited this year from being saved:</h2>
+
+      <ul>
+        <% year.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :country_id %>
+    <%= form.text_field :country_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :YR2000 %>
+    <%= form.text_field :YR2000 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :YR2001 %>
+    <%= form.text_field :YR2001 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :YR2002 %>
+    <%= form.text_field :YR2002 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :YR2003 %>
+    <%= form.text_field :YR2003 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :YR2004 %>
+    <%= form.text_field :YR2004 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :YR2005 %>
+    <%= form.text_field :YR2005 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :YR2006 %>
+    <%= form.text_field :YR2006 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :YR2007 %>
+    <%= form.text_field :YR2007 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :YR2008 %>
+    <%= form.text_field :YR2008 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :YR2009 %>
+    <%= form.text_field :YR2009 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :YR2010 %>
+    <%= form.text_field :YR2010 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :YR2011 %>
+    <%= form.text_field :YR2011 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :YR2012 %>
+    <%= form.text_field :YR2012 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :YR2013 %>
+    <%= form.text_field :YR2013 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :YR2014 %>
+    <%= form.text_field :YR2014 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :YR2015 %>
+    <%= form.text_field :YR2015 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :YR2016 %>
+    <%= form.text_field :YR2016 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :YR2017 %>
+    <%= form.text_field :YR2017 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :YR2018 %>
+    <%= form.text_field :YR2018 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :YR2019 %>
+    <%= form.text_field :YR2019 %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
