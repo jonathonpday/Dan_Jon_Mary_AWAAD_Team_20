@@ -3,9 +3,9 @@ class Year < ApplicationRecord
 
   def self.search(term)
     if term
-      country_name = Country.find_by(name: term)
+      country_name = Country.where(['name LIKE ?', "%#{term}%"])
       if country_name
-        self.where(country_id: country_name.id)
+        self.where(country_id: country_name.ids)
       else
         @years = Year.all
       end
