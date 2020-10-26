@@ -33,7 +33,7 @@
   <tbody>
     <% @years.each do |year| %>
       <tr>
-        <td><%= year.country_id %></td>
+        <td><%= year.country.name %></td>
         <td><%= year.YR2000.round(2) %></td>
         <td><%= year.YR2001.round(2) %></td>
         <td><%= year.YR2002.round(2) %></td>

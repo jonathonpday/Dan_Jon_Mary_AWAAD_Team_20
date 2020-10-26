@@ -10,6 +10,7 @@ class YearsController < ApplicationController
   # GET /years/1
   # GET /years/1.json
   def show
+    @years = Year.find(params[:id])
   end
 
   # GET /years/new
