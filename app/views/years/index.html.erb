@@ -31,6 +31,11 @@
   </thead>
 
   <tbody>
+  <%= form_tag(years_path, method: :get) do %>
+    <%= text_field_tag :term, params[:term] %>
+    <%= submit_tag 'Search' %>
+  <% end %>
+
     <% @years.each do |year| %>
       <tr>
         <td><%= year.country.name %></td>
