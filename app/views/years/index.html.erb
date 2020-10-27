@@ -1,0 +1,72 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Years</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Country</th>
+      <th>2000</th>
+      <th>2001</th>
+      <th>2002</th>
+      <th>2003</th>
+      <th>2004</th>
+      <th>2005</th>
+      <th>2006</th>
+      <th>2007</th>
+      <th>2008</th>
+      <th>2009</th>
+      <th>2010</th>
+      <th>2011</th>
+      <th>2012</th>
+      <th>2013</th>
+      <th>2014</th>
+      <th>2015</th>
+      <th>2016</th>
+      <th>2017</th>
+      <th>2018</th>
+      <th>2019</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+  <%= form_tag(years_path, method: :get) do %>
+    <%= text_field_tag :term, params[:term] %>
+    <%= submit_tag 'Search' %>
+  <% end %>
+
+    <% @years.each do |year| %>
+      <tr>
+        <td><%= year.country.name %></td>
+        <td><%= year.YR2000.round(2) %></td>
+        <td><%= year.YR2001.round(2) %></td>
+        <td><%= year.YR2002.round(2) %></td>
+        <td><%= year.YR2003.round(2) %></td>
+        <td><%= year.YR2004.round(2)%></td>
+        <td><%= year.YR2005.round(2) %></td>
+        <td><%= year.YR2006.round(2) %></td>
+        <td><%= year.YR2007.round(2) %></td>
+        <td><%= year.YR2008.round(2) %></td>
+        <td><%= year.YR2009.round(2) %></td>
+        <td><%= year.YR2010.round(2) %></td>
+        <td><%= year.YR2011.round(2) %></td>
+        <td><%= year.YR2012.round(2) %></td>
+        <td><%= year.YR2013.round(2) %></td>
+        <td><%= year.YR2014.round(2) %></td>
+        <td><%= year.YR2015.round(2) %></td>
+        <td><%= year.YR2016.round(2) %></td>
+        <td><%= year.YR2017.round(2) %></td>
+        <td><%= year.YR2018.round(2) %></td>
+        <td><%= year.YR2019.round(2) %></td>
+        <td><%= link_to 'Show', year %></td>
+        <td><%= link_to 'Edit', edit_year_path(year) %></td>
+        <td><%= link_to 'Destroy', year, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Year', new_year_path %>
