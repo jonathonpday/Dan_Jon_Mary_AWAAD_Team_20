@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'country_gdp/index'
   resources :years
   resources :countries
 
