@@ -11,6 +11,10 @@ class YearsController < ApplicationController
   # GET /years/1.json
   def show
     @years = Year.find(params[:id])
+    @year_values = []
+    @years.each do |year|
+      @year_values << year
+    end
   end
 
   # GET /years/new

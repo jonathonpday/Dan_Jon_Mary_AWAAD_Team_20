@@ -1,2 +1,11 @@
+33433ce	Jonathon Day	Wed Oct 28 22:18:49 2020	Merge branch 'master' of github.com:jonathonpday/Dan_Jon_Mary_AWAAD_Team_20
+b4a7567	Jonathon Day	Wed Oct 28 22:14:32 2020	corrected error with Countries not showing in show.html.erb
+22e9259	IJEOMA UGOCHUKWU-IBE	Wed Oct 28 22:10:11 2020	worked on chart and logo
+7b1057e	Jonathon Day	Tue Oct 27 23:04:31 2020	Merge pull request #1 from jonathonpday/db_links
+64af4ee	Jonathon Day	Mon Oct 26 23:29:39 2020	Improved serach bar with partial search
+eeae423	Jonathon Day	Mon Oct 26 23:22:06 2020	Baisc search bar created
+22a1654	Jonathon Day	Mon Oct 26 21:01:06 2020	change id display to nation
+8004c89	Jonathon Day	Sat Oct 24 23:23:02 2020	Round out the views and make the dates clearer
+3db3066	Jonathon Day	Sat Oct 24 21:30:37 2020	Adding the years database and linking it with the countries datbase.
 9757419	Jonathon Day	Wed Oct 21 22:48:11 2020	Countires table created and CSV data uploaded
 29644b8	Jonathon Day	Wed Oct 21 09:47:32 2020	First commit!
