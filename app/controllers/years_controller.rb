@@ -12,8 +12,10 @@ class YearsController < ApplicationController
   def show
     @years = Year.find(params[:id])
     @year_values = []
-    @years.each do |year|
-      @year_values << year
+    @years.attributes.each do |attr_name, attr_value|
+      if attr_name != "country_id"
+        @year_values << attr_value
+      end 
     end
   end
 
