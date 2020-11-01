@@ -1,9 +1,12 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Countries</h1>
+<div class="container-fluid">
+<nav class="navbar navbar-light bg-light justify-content-between">
+  <a class="navbar-brand">Countries</a>
+    
 
-<table>
-  <thead>
+<table class="table table-sm table-striped " >
+  <thead class="thead-dark" >
     <tr>
       <th>Name</th>
       <th>Code</th>
@@ -17,9 +20,9 @@
         <td><%= country.id %></td>
         <td><%= country.name %></td>
         <td><%= country.code %></td>
-        <td><%= link_to 'Show', country %></td>
-        <td><%= link_to 'Edit', edit_country_path(country) %></td>
-        <td><%= link_to 'Destroy', country, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Show', country, class: "btn btn-primary" %></td>
+        <td><%= link_to 'Edit', edit_country_path(country), class: "btn btn-primary"  %></td>
+        <td><%= link_to 'Destroy', country, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-primary"  %></td>
       </tr>
     <% end %>
   </tbody>
@@ -27,4 +30,4 @@
 
 <br>
 
-<%= link_to 'New Country', new_country_path %>
+<%= link_to 'New Country', new_country_path, class: "btn btn-info" %>
