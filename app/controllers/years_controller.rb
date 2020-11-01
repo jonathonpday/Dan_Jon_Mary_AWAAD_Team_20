@@ -11,6 +11,12 @@ class YearsController < ApplicationController
   # GET /years/1.json
   def show
     @years = Year.find(params[:id])
+    @year_values = []
+    @years.attributes.each do |attr_name, attr_value|
+      if attr_name != "country_id"
+        @year_values << attr_value
+      end 
+    end
   end
 
   # GET /years/new
