@@ -8,7 +8,9 @@ namespace :countries do
     CSV.foreach("lib/assets/countries.csv", :headers => true) do | row |
      Country.create!(
         name: row[0],
-        code: row[1]
+        code: row[1],
+        lattitude: row[2],
+        longitude: row[3]
       )
     end 
   end
