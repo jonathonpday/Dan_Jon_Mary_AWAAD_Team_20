@@ -18,6 +18,11 @@ class YearsController < ApplicationController
         @year_values << attr_value
       end 
     end
+
+    respond_to do |format|
+      format.html
+      format.json {render json: @years.to_json}
+    end
   end
 
   # GET /years/new

@@ -1,3 +1,23 @@
+13bcc93	Jonathon Day	Mon Nov 2 21:59:48 2020	Debugging master code
+7bb56a1	Jonathon Day	Mon Nov 2 21:47:48 2020	Merge pull request #2 from jonathonpday/maps
+3dd5d7e	Jonathon Day	Mon Nov 2 21:46:55 2020	Merge branch 'master' into maps
+6a7a826	Jonathon Day	Mon Nov 2 21:22:35 2020	Merge maps and highchart functionality
+5dfebb6	DAN HAN	Sun Nov 1 21:44:23 2020	commit to git hub
+94fc9ab	DAN HAN	Sun Nov 1 21:41:06 2020	commit to git hub
+9a3c7b6	IJEOMA UGOCHUKWU-IBE	Sun Nov 1 21:21:01 2020	update on chart
+cf37e11	IJEOMA UGOCHUKWU-IBE	Sun Nov 1 19:49:05 2020	second heroku commit
+3b934f3	IJEOMA UGOCHUKWU-IBE	Sun Nov 1 19:47:25 2020	second heroku commit
+3be0a22	IJEOMA UGOCHUKWU-IBE	Sun Nov 1 19:44:55 2020	second heroku commit
+26c028c	Jonathon Day	Sun Nov 1 11:41:45 2020	Map functionality added
+481235d	Jonathon Day	Sat Oct 31 08:57:39 2020	Added Lattitude and Longititude data to CSV and added new columns to table
+d4a34cb	IJEOMA UGOCHUKWU-IBE	Thu Oct 29 11:29:17 2020	updated app in heroku
+bf8cc7f	IJEOMA UGOCHUKWU-IBE	Thu Oct 29 11:09:51 2020	updated app in heroku
+08507e2	IJEOMA UGOCHUKWU-IBE	Thu Oct 29 11:09:07 2020	updated app in heroku
+067f253	IJEOMA UGOCHUKWU-IBE	Thu Oct 29 11:08:15 2020	updated app in heroku
+27d490a	IJEOMA UGOCHUKWU-IBE	Thu Oct 29 11:06:41 2020	updated app in heroku
+0b41be9	IJEOMA UGOCHUKWU-IBE	Thu Oct 29 02:39:19 2020	first heroku commit
+88f4375	Jonathon Day	Thu Oct 29 00:41:34 2020	correct data calls for charts
+c1f5713	Jonathon Day	Wed Oct 28 22:52:57 2020	help with charts values
 33433ce	Jonathon Day	Wed Oct 28 22:18:49 2020	Merge branch 'master' of github.com:jonathonpday/Dan_Jon_Mary_AWAAD_Team_20
 b4a7567	Jonathon Day	Wed Oct 28 22:14:32 2020	corrected error with Countries not showing in show.html.erb
 22e9259	IJEOMA UGOCHUKWU-IBE	Wed Oct 28 22:10:11 2020	worked on chart and logo

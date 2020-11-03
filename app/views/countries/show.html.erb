@@ -3,8 +3,11 @@
 integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
 crossorigin=""></script>
 
+<div class="container-fluid">
 
 <p id="notice"><%= notice %></p>
+
+<%= link_to "JSON Version", country_path(@country, 'json') %>
 
 <p>
   <strong>Name:</strong>
@@ -23,6 +26,7 @@ crossorigin=""></script>
 <div class="map">
 <div class="container">
 <div id="mapid"></div>
+</div>
 </div>
 </div>
 
