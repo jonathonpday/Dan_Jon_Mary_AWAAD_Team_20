@@ -3,6 +3,11 @@
 <div class="container-fluid">
 <nav class="navbar navbar-light bg-light justify-content-between">
   <a class="navbar-brand">Countries</a>
+  <%= form_tag(countries_path, method: :get) do  %>
+    <%= text_field_tag :term, params[:term] %>
+    <%= submit_tag 'Search', class: "btn btn-outline-success my-2 my-sm-0" %>
+  <% end %>
+</nav>
     
 
 <table class="table table-sm table-striped " >

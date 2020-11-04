@@ -1,3 +1,18 @@
+<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+crossorigin=""></script>
+
+<h1 class = 'title'><em><%= @years.country.name %></em></h1>
+
+<%= link_to "JSON Version", year_path(@years, 'json') %>
+<br>
+<div class="container-fluid">
+<div id="mapid"></div>
+</div>
+
+<div class="container-fluid">
+<p><em>If the chart does not show please refresh the page</em></p>
+<br>
 
 <div id="container" style="width:100%;height:400px;"></div>
 <script type="text/javascript">
@@ -24,6 +39,16 @@ data: <%= raw @year_values %>
 }]
 });
 });
+
+var mymap = L.map('mapid').setView([<%= @years.country.lattitude %>, <%= @years.country.longitude %>], 5);
+L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
+    attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+    maxZoom: 10,
+    id: 'mapbox.satellite',
+    accessToken: 'pk.eyJ1IjoianBhbmRkIiwiYSI6ImNrZ3l4Nm91ZDBoeG0zMHF2bGd2a2sycGMifQ.MbT2gOUkhTMCIVDp7_twmA'
+}).addTo(mymap);
+var marker = L.marker([<%= @years.country.lattitude %>, <%= @years.country.longitude %>]).addTo(mymap);
+
 </script>
 <p id="notice"><%= notice %></p>
 <p>
@@ -134,3 +159,4 @@ data: <%= raw @year_values %>
 
 <%= link_to 'Edit', edit_year_path(@year) %> |
 <%= link_to 'Back', years_path %>
+</div>

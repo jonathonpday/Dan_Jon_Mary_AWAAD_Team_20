@@ -37,18 +37,12 @@
 @import "~bootstrap/scss/_utilities.scss";
 
 #mapid {
-  overflow: visible;
+  height: 380px;
+}
+#container {
+  height: 100vh;
 }
 
-#mapid {
-  height: 300px;
-}
-
-.map {
-  width: 100%;
-  margin: 10px;
-  height: 65.85%;
-  position: fixed;
-  display: block;
-  z-index: 10;
+.title {
+  text-align: center;
 }

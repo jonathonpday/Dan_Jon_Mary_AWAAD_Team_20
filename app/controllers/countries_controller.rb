@@ -4,13 +4,17 @@ class CountriesController < ApplicationController
   # GET /countries
   # GET /countries.json
   def index
-    @countries = Country.all
+    @countries= Country.search(params[:term])
   end
 
   # GET /countries/1
   # GET /countries/1.json
   def show
     @country = Country.find(params[:id])
+    respond_to do |format|
+      format.html
+      format.json {render json: @country.to_json}
+    end
   end
 
   # GET /countries/new
