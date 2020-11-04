@@ -1,12 +1,13 @@
+<p>Gross Domestic Product of Countries</p>
+<p>2000 to 2019</p>
 <p id="notice"><%= notice %></p>
-
 <div class="container-fluid">
-<nav class="navbar navbar-light bg-light justify-content-between">
-  <a class="navbar-brand">Years</a>
-  <%= form_tag(years_path, method: :get) do  %>
+<nav   class="navbar navbar-light bg-light justify-content-between">
+<h1>Years</h1>
+ <%= form_tag(years_path, method: :get) do  %>
     <%= text_field_tag :term, params[:term] %>
     <%= submit_tag 'Search', class: "btn btn-outline-success my-2 my-sm-0" %>
-  <% end %>
+ <% end %>
 </nav>
     
 <table  class="table table-sm table-striped  container">
@@ -63,14 +64,15 @@
         <td><%= year.YR2017.round(2) %></td>
         <td><%= year.YR2018.round(2) %></td>
         <td><%= year.YR2019.round(2) %></td>
-        <td><%= link_to 'Show', year, class: "btn btn-primary"  %></td>
-        <td><%= link_to 'Edit', edit_year_path(year), class: "btn btn-primary"  %></td>
-        <td><%= link_to 'Destroy', year, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-primary"  %></td>
+        <td><%= link_to 'Show', year %></td>
+        <td><%= link_to 'Edit', edit_year_path(year) %></td>
+        <td><%= link_to 'Destroy', year, method: :delete, data: {confirm: 'Are you sure?' }%></td>
       </tr>
     <% end %>
   </tbody>
 </table>
 
 <br>
+<%#= will_paginate @years, renderer: BootstrapPagination::Rails %>
 
 <%= link_to 'New Year', new_year_path, class: "btn btn-info" %>
